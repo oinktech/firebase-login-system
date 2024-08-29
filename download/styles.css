@@ -1,0 +1,143 @@
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* 背景动画 */
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(135deg, #f9f9f9, #e0e0e0); }
+    100% { background: linear-gradient(135deg, #e0e0e0, #f9f9f9); }
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* 表单输入 */
+input {
+    margin-bottom: 15px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.3);
+    outline: none;
+}
+
+/* 按钮样式 */
+button {
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:active {
+    background-color: #003d7a;
+    transform: translateY(1px);
+    box-shadow: none;
+}
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+/* Google 登录按钮样式 */
+#login-google {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #4285f4; /* Google 蓝色 */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#login-google:hover {
+    background-color: #357ae8;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#login-google:active {
+    background-color: #2a56c6;
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+/* 文字样式 */
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* 重置消息 */
+#reset-message {
+    color: green;
+    text-align: center;
+    font-size: 16px;
+}

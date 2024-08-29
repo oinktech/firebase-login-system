@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>登入系統</h1>
+        <button id="login-google" class="login-button"><ion-icon name="logo-google"></ion-icon> 使用 Google 登入</button>
+
+        <div id="email-login-form" class="form">
+            <h2>Email 登入</h2>
+            <input type="email" id="login-email-input" placeholder="Email" required>
+            <input type="password" id="login-password-input" placeholder="密碼" required>
+            <button id="submit-login" class="login-button">登入</button>
+            <div id="error-message" class="error-message"></div> <!-- 錯誤信息容器 -->
+            <p><a href="./reset-password.html" id="forgot-password">忘記密碼？</a></p>
+            <p>還沒有帳戶？<a href="register.html" id="show-register">註冊</a></p>
+        </div>
+
+        
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

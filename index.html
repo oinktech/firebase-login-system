@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創建 Firebase 登入系統</title>
+</head>
+<body>
+    <h1>創建 Firebase 登入系統</h1>
+    <h2>輸入 Firebase 詳細訊息</h2>
+    <h3>確保正確啟用 Authentication 中的 Email 和 Google 登入功能</h3>
+    <h4>用以下格式輸入</h4>
+    <p>const firebaseConfig = {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXX",</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;authDomain: "XXXXXXXXXXX.firebaseapp.com",</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;projectId: "XXXXXXXXXXX",</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;storageBucket: "XXXXXXXXXXX.appspot.com",</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;messagingSenderId: "XXXXXXXXXXX",</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appId: "XXXXXXXXXXXXXXXXXXXXXXXXXX"</p>
+    <p>};</p>
+
+    <form id="messageForm">
+        <label for="message">訊息:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">生成並下載檔案</button>
+    </form>
+
+    <a id="downloadLink" style="display:none">下載 ZIP 檔案</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
